@@ -75,10 +75,6 @@
           <div class="main-title">
             <span>trending now</span>
           </div>
-          <div class="view-all">
-            <span>view all</span>
-            <i class="fa fa-arrow-right-long"></i>
-          </div>
         </div>
         <div class="body">
           <div class="card" *ngFor="let anime of animeList">
@@ -112,40 +108,12 @@
           </div>
         </div>
       </div>
-      <div class="top-view">
-        <div class="header">
-          <div class="main-title">
-            <span>Top view</span>
-          </div>
-          <div class="view-all">
-            <span>view all</span>
-            <i class="fa fa-arrow-right-long"></i>
-          </div>
-        </div>
-        <div class="body">
-          <div class="card" *ngFor="let anime of BestFive |  slice:0:4">
-            <div class="title-container">
-            </div>
-            <div class="title">
-              <span>{{anime.name}}</span>
-            </div>
-            <div class="view">
-              <span><i class="fa fa-eye" style="padding-right: 0.5rem"></i> {{anime.opened}}</span>
-            </div>
-            <img [src]="anime.image">
-          </div>
-        </div>
-      </div>
     </div>
     <div class="second-content">
       <div class="most-popular">
         <div class="header">
           <div class="main-title">
             <span>Most Popular</span>
-          </div>
-          <div class="view-all">
-            <span>view all</span>
-            <i class="fa fa-arrow-right-long"></i>
           </div>
         </div>
         <div class="body">
@@ -169,33 +137,6 @@
               </div>
               <div class="title">
                 Boruto : Naruto Next Generation
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="New-Comment">
-        <div class="header">
-          <div class="main-title">
-            <span>New Comment</span>
-          </div>
-        </div>
-        <div class="body">
-          <div class="commented-anime-information">
-            <div class="card">
-              <img src="assets/images/NS.jpeg">
-            </div>
-            <div class="informations">
-              <div class="row">
-                <div class="info">
-                  <span>Active</span>
-                </div>
-                <div class="info">
-                  <span>Anime</span>
-                </div>
-              </div>
-              <div class="anime-name">
-                <span>Naruto: Shippuden</span>
               </div>
             </div>
           </div>
